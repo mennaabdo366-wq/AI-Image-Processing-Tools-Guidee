@@ -4,7 +4,7 @@
 import cv2
 
 # قراءة الصورة التي قمتِ برفعها
-image = cv2.imread('image_path.jpg') 
+image = cv2.imread(&#39;image_path.jpg&#39;) 
 
 if image is not None:
     # 1. تحويل الصورة إلى اللون الرمادي
@@ -14,7 +14,7 @@ if image is not None:
     edges = cv2.Canny(gray_image, 100, 200)
     
     # حفظ النتيجة النهائية
-    cv2.imwrite('output_edges.jpg', edges)
-    print("تمت معالجة الصورة بنجاح!")
+    cv2.imwrite(&#39;output_edges.jpg&#39;, edges)
+    print(&quot;تمت معالجة الصورة بنجاح!&quot;)
 else:
-    print("خطأ: لم يتم العثور على ملف الصورة. تأكدي من الاسم.")
+    print(&quot;خطأ: تأكدي من اسم الصورة&quot;)
